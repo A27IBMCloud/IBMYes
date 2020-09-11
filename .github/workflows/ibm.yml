@@ -25,7 +25,7 @@ jobs:
       run: |
         ./IBM_Cloud_CLI/ibmcloud config --check-version false
         ./IBM_Cloud_CLI/ibmcloud config --usage-stats-collect false
-        ./IBM_Cloud_CLI/ibmcloud login <<EOFi
+        ./IBM_Cloud_CLI/ibmcloud login <<EOF
         $IBM_ACCOUNT
         $REGION_NUM
         no
