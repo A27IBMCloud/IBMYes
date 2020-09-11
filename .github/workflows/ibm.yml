@@ -23,9 +23,9 @@ jobs:
         IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT }}
         REGION_NUM: ${{ secrets.REGION_NUM }}
       run: |
-        ./IBM_Cloud_CLI/ibmcloud config --check-version "false"
-        ./IBM_Cloud_CLI/ibmcloud config --usage-stats-collect "flase"
-        ./IBM_Cloud_CLI/ibmcloud login <<EOF
+        ./IBM_Cloud_CLI/ibmcloud config --check-version false
+        ./IBM_Cloud_CLI/ibmcloud config --usage-stats-collect false
+        ./IBM_Cloud_CLI/ibmcloud login <<EOFi
         $IBM_ACCOUNT
         $REGION_NUM
         no
