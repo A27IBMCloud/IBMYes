@@ -28,6 +28,8 @@ jobs:
         $REGION_NUM
         no
         EOF
+        ./IBM_Cloud_CLI/ibmcloud config --check-version=false
+        ./IBM_Cloud_CLI/ibmcloud config --usage-stats-collect=flase
     - name: Target IBM Cloud
       env:
         RESOURSE_ID: ${{ secrets.RESOURSE_ID }}
